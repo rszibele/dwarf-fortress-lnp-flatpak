@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Dwarf Fortress LNP
+Comment=An immersive single-player fantasy game.
+Exec=/app/bin/launcher.sh
+Icon=com.bay12games.DwarfFortress
+Terminal=false
+Type=Application
+Categories=Game;
