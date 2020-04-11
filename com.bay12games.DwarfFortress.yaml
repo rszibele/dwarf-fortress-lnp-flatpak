@@ -59,42 +59,12 @@ modules:
     url: https://www.cairographics.org/releases/cairo-1.16.0.tar.xz
     sha512: 9eb27c4cf01c0b8b56f2e15e651f6d4e52c99d0005875546405b64f1132aed12fbf84727273f493d84056a13105e065009d89e94a8bfaf2be2649e232b82377f
 
-# Dwarf Fortress dependency
-- name: gtk2
-  sources:
-  - type: archive
-    url: https://download.gnome.org/sources/gtk+/2.24/gtk+-2.24.32.tar.xz
-    sha512: 8e8fd9ae32f1d6fb544da260f00599f0f05090d910d767b06ef086ab4f1f8373a29bb0da9767761c9b5f4cfd51b5c45d0fa5d39b0428c839ddf0a579df806696
-
-# Dwarf Fortress dependency
-- name: libglu
-  sources:
-  - type: archive
-    url: https://mesa.freedesktop.org/archive/glu/glu-9.0.1.tar.xz
-    sha512: 8a6dae5b4bd63efb96d15f23ccda4ad9c2ffaa964897e5fa63d1e58360d8d4e6732c5efd2109dba04155d5fc457ab1718a65cf9b544ce0d452679ba988d04018
-
-# Dwarf Fortress dependency
-- name: libsdl
-  sources:
-  - type: archive
-    url: https://www.libsdl.org/release/SDL-1.2.15.tar.gz
-    sha512: ac392d916e6953b0925a7cbb0f232affea33339ef69b47a0a7898492afb9784b93138986df53d6da6d3e2ad79af1e9482df565ecca30f89428be0ae6851b1adc
-  - type: patch
-    path: libsdl-1.2-x11-fix.patch
-
-# Dwarf Fortress dependency
-- name: libsdl-image
-  sources:
-  - type: archive
-    url: https://www.libsdl.org/projects/SDL_image/release/SDL_image-1.2.12.tar.gz
-    sha512: 0e71b280abc2a7f15755e4480a3c1b52d41f9f8b0c9216a6f5bd9fc0e939456fb5d6c10419e1d1904785783f9a1891ead278c03e88b0466fecc6871c3ca40136
-
-# Dwarf Fortress dependency
-- name: libsdl-ttf
-  sources:
-  - type: archive
-    url: https://www.libsdl.org/projects/SDL_ttf/release/SDL_ttf-2.0.11.tar.gz
-    sha512: 64e04d1cd77e525e0f2413ad928841e5d3d09d551c030fc577b50777116580e430cb272b2aeb6191dfcc464669cf2f7a5a50d10e7c75637a3b1e8c8fca7fc78b
+# Dwarf Fortress dependencies
+- shared-modules/gtk2/gtk2.json
+- shared-modules/glu/glu-9.json
+- shared-modules/SDL/SDL-1.2.15.json
+- shared-modules/SDL/SDL_image-1.2.12.json
+- shared-modules/SDL/SDL_ttf-2.0.11.json
 
 # java (required for utilities)
 - name: adoptopenjdk-jre-8
